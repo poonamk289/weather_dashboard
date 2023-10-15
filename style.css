@@ -1,109 +1,142 @@
+
 body{
-    top: 0px;
-    margin:0px;
-    background: linear-gradient(280deg, #2E335A 1.62%, #1C1B33 95.72%);
+    top:0px;
+    left: 0px;
+    background: linear-gradient(180deg, #7a90e8 3.10%, #7f6b77 50%);
+    /* background-image: url(https://c8.alamy.com/comp/2B23YW6/gorgeous-cloudscape-in-springtime-weather-background-with-dynamic-cloud-arrangement-on-a-blue-sky-sunny-and-windy-day-good-weather-forecast-concept-2B23YW6.jpg);  */
+    background-size: auto;
+    /* background-repeat: no-repeat; */
+    color: white;
+    height: 100%;
+    font-family: Inter;
 }
-
-.weather{
-    /* background: linear-gradient(168.44deg, #2E335A 1.62%, #1C1B33 95.72%); */
-       padding: 10px;
-       /* height: 97vh; */
-       /* width: 5vw; */
-       /* top:0px; */
-       /* margin: 0px; */
-}
-.title{
-     color: #FFFFFF; 
-    /* background-color: #1C1B33; */
+.heading{
+    margin-top: 5vh;
     text-align: center;
-    font-size: 45px;
-      font-family: 'Inter';
-      padding-top:10px;
-
-      
+    font-weight: 800;
+    font-size: 54px;
+    margin-bottom: 5vh;
 }
-.input{
-    /* background: linear-gradient(168.44deg, rgba(46, 51, 90, 0.26) 1.62%, rgba(28, 27, 51, 0.26) 95.72%); */
-align-items: center;
-/* border: 2px solid red; */
-padding:2px;
-/* padding-left:35vw; */
-/* margin: 10px; */
-display: grid;
-grid-template-columns: 5fr 3fr;
-/* gap: 70px; */
-
-}
-.input-inner>input{
-    /* padding-top: 3vh; */
-    padding: 10px;
-    background-color: inherit;
-    /* justify-self: right; */
-    /* border: 2px solid blue; */
-    width: 30vw;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color:white;
-    
-    
-}
-.button{
-    justify-self: start;
-    /* border:2px solid yellow; */
-    
-}
-.input-inner{
-    /* border: 2px solid green; */
+.divinput{
+    /* border: 1px solid rgb(73, 53, 53); */
+    padding-left: 0.5vw;
     justify-self: right;
-     border-radius: 10px;
-     box-shadow: 0px -2px 10px rgb(14, 3, 12);
-     
-   
-}
-button{
-    padding:10px;
-    background: #4A397FB2;
-     color: white;
-    margin: 20px;
-    font-size: 18px;
+    box-shadow:  0px -2px 10px rgb(15, 3, 34);
     border-radius: 5px;
-    width: 10vw;
+}
+
+input{
+    width: 30vw;
+    padding: 10px;
+    margin: 5px;
+    font-size: 17px;
+    background-color: inherit;
     border: none;
     outline: none;
+    color: white;
+}
+::placeholder {
+    color: white; /* Change this color to your desired placeholder color */
+}
+.divsubmit{
+    /* border: 1px solid white; */
+    justify-self:start;
+    box-shadow:  0px -2px 10px #1a053d;
+    border-radius: 5px;
+    
+    background-color: #8549f4;
+}
+.divsubmit>button{
+    padding: 13px 27px 10px 27px;
+    
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+
 }
 .main-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* border: 2px solid red; */
-    padding: 40px;
-    /* gap:10vw; */
-    top: 0px;
-    margin: 0px;
-}
-.grid-item{
-     /* border: 2px solid rgb(14, 204, 7);  */
-    color: white;
-    padding:15px;
-    margin:10px;
-    
-    /* border-radius: 2vw; */
-    /* width: 18vw; */
-
-    /* height: 15vh; */
-}
-.item-content{
-    /* border: 2px solid yellow; */
-    background-image: url("Rectangle\ 1.svg");
-    background-size: 120%;
-    background-repeat: no-repeat;
-    height: 190px;
-    padding: 10px;
-}
-.shower{
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
-    gap:10vw;
-    /* padding: 10px; */
-    padding-top:2px;
+    padding: 70px;
+    flex-wrap: wrap;
+    gap: 2vw;
+    row-gap: 5vh;
+}
+
+.grid-item{
+    /* border: 1px solid white; */
+    padding: 10px;
+    width:calc(33.33% - 50px);
+    height: 100%;
+}
+@media (min-width:2255px) {
+    .grid-item{
+        /* border: 1px solid white; */
+        padding: 10px;
+        width:calc(25% - 70px);
+        height: 100%;
+    }
+}
+@media (max-width:1400px) {
+    .grid-item{
+        /* border: 1px solid white; */
+        padding: 10px;
+        width:calc(50% - 50px);
+        height: 100%;
+    }
+}
+@media (max-width:1100px) {
+    .grid-item{
+        /* border: 1px solid white; */
+        padding: 10px;
+        width:calc(100% - 50px);
+        height: 100%;
+    }
+}
+.grid-content{
+    /* border:1px solid green; */
+    background-image: url("Rectangle\ 1.svg");
+    /* background: linear-gradient(to left,rgb(199, 141, 141),rgb(215, 215, 169)); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px ;
+
+
+    /* background-position-y: 100%; */
+}
+.details{
+    padding-top:0.2vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.8vh;
+   
+}
+.high-low{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 18px;
+    color:rgb(176, 172, 172);
+    margin-left: 10px;
+}
+.cot-type{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    font-size: 24px;
+    padding-top: 0px;
+    padding-right: 15px;
+    margin-left: 10px;
+    
+}
+.dayType{
+    /* padding-left: 8vw; */
 }

@@ -4,52 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
-    <div class="weather">
-        <div class="title">
-            <span>Weather Cities Project</span>
-      </div>
-      <form id="search">
-      <div class="input">
-           <div class="input-inner">
-                <img src="magnifyingglass.svg" style="margin-left:5px;height:12px; width:25px;">
-                <input type="text" name="cityname"; placeholder="search for a city or airport" id="cityname" required> 
-          </div>
-         <div class="button" style="white-space: nowrap;">
-                <button>Add City</button>
-         </div>
-      </div>
-      </form>
-      <div class="main-content">
-         <div class="grid-item">
-            <div class="item-content">
-             <div style="float: right;"><img src="srain.svg" style="height:20vh"></div>
-                  <div style="color:white;">  <i class="fa-solid fa-gauge-simple-high" style="color: #ffffff;"></i>5km/h <br>
-                    <i class="fa-regular fa-compass" style="color: #f7f7f8;"></i>north-east
+   
+    <div style="">
+        <div class="heading">
+            <span>City Weather Forecast</span>
+        </div>
+        <form>
+            <div style="display: grid;grid-template-columns: 5fr 3fr;gap:20px">
+                
+                    <div class="divinput">
+                        <img src="magnifyingglass.svg" alt="" style="padding-top:0;width: 15px;height:15px;">
+                        <input required type="text" placeholder="Search for a city or airport" name="cityName" id="cityName" style="color: white;">
+                    </div>
+                    <div style="display: flex;gap: 20px;">
+                        <div class="divsubmit">
+                            <button   id="search" type="submit">Add City</button>   
+                        </div>
+                        <div class="divsubmit">
+                            <button  id="cleardata" type="submit">Clear Data</button>
+                        </div>
+                    </div>
+                
+            </div>
+        </form>
+        <div class="main-content">
+            <!-- <div class="grid-item">
+                <div class="grid-content">
+                   
+                    <div style=" display: flex;flex-direction: row;justify-content: space-between;font-size: 26px;white-space: nowrap;">
+                        <div  style=" display: flex;flex-direction: column;padding-bottom: 5px;padding-top: 3vh;">
+                           <span><i class="fa-solid fa-gauge-simple-high" style="color: #e6ebf4;padding-right: 7px;"></i>5km/h</span> 
+                           <span><i class="fa-regular fa-compass" style="color: #eaecf0;padding-right: 7px;"></i>northeast</span> 
+                           <span><i class="fa-solid fa-droplet" style="color: #f0f2f5;padding-right: 7px;"></i>100%</span> 
+                            
+                            
+                        </div>
+                        <img src="sun.svg" style="height: 13vh;width: 13vw; padding-right: 2vw;">
+                    </div>
+                    
+                    <div class="details">
+                        <div style="font-size: 65px;">
+                      
+                            13<sup style="font-size: 20px;position: absolute;">o</sup>
+                   
+                        </div>
+                        <div class="high-low">
+                            <div>H:19<sup>o</sup></div>
+                            <div>L:8<sup>o</sup></div>
+                        </div>
+                        <div class="high-low">
+                            <div>Humidity:23</div>
+                            <div>pressure:55</div>
+                        </div>
+                        <div class="cot-type">
+                            <div> Tokya,Japan</div>   
+                            <div class="dayType"> shower</div>   
+                        </div>
+                    </div>
+
                 </div>
-               <div style="color:rgb(247, 243, 243) ;"> <i class="fa-solid fa-droplet" style="color: #ffffff;"></i> 10%</div>
-                <div style="padding-top:20px; font-size:35px;">13<sup style="font-size: 20px;">o</sup></div>
-                <div style="font-size:15px; color:rgba(250, 241, 241, 0.911);padding-left:5px;padding-top:8px;"><b>H:16</b><sup>o</sup><b>L:8</b><sup>o</sup> </div>
-                <div style="font-size:15px; color: rgba(250, 241, 241, 0.911); padding-left:5px;"><b>Humidity:23 pressure:122 </b> </div>
-                <div class="shower">
-                    <div style="white-space: nowrap;padding: 5px; font-size: 17px;">Tokyo, Jn</div>
-                    <div>Showers</div>
+            </div> -->
+            <div class="grid-item">
+                <div class="grid-content">
+                   
+                    <div style=" display: flex;flex-direction: row;justify-content: space-between;font-size: 26px;white-space: nowrap;">
+                        <div  style=" display: flex;flex-direction: column;padding-bottom: 5px;">
+                           <!-- <span><i class="fa-solid fa-gauge-simple-high" style="color: #e6ebf4;padding-right: 7px;"></i>5km/h</span> 
+                           <span><i class="fa-regular fa-compass" style="color: #eaecf0;padding-right: 7px;"></i>northeast</span> 
+                           <span><i class="fa-solid fa-droplet" style="color: #f0f2f5;padding-right: 7px;"></i>100%</span> 
+                            
+                             -->
+                        </div>
+                        <img src="sun.svg" alt="." style="height: 15vh;padding-right: 2vw;">
+                    </div>
+                    
+                    <div class="details" style="padding-bottom: 3vh;">
+                        <div style="font-size: 35px;">
+                      
+                            Search city to get the Weather Report...
+                        </div>
+                        <div class="high-low">
+                            Search city to get the Weather Report...
+                        </div>
+                        <div class="high-low">
+                            <!-- <div>Humidity:23</div>
+                            <div>pressure:55</div> -->
+                        </div>
+                        <div class="cot-type">
+                            <!-- <div> Tokya,Japan</div>   
+                            <div class="dayType"> shower</div>    -->
+                        </div>
+                    </div>
 
                 </div>
             </div>
+            
+           
+
+  
+          
         </div>
-        
-       
-      </div>
 
 
     </div>
-    <script src="style.js">
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
